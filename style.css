@@ -125,7 +125,7 @@ nav a:hover {
 .buttons .btn {
   color: #fff;
   text-decoration: none;
-  margin: 10px;
+  margin: 0;
   padding: 10px 25px;
   border-radius: 25px;
   font-size: 16px;
@@ -133,6 +133,7 @@ nav a:hover {
   box-shadow: 0 0 10px #ff003c88;
   transition: 0.3s;
 }
+
 
 .buttons .btn:hover {
   box-shadow: 0 0 20px #ff003c, 0 0 25px #ff003c;
