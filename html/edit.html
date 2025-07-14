@@ -1,0 +1,46 @@
+<div class="edit-container">
+    <div class="container disable">
+        <h2 data-i18n="imageEditorTitle">Easy Image Editor</h2>
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="filter">
+                    <label class="title" data-i18n="filters">Filters</label>
+                    <div class="options">
+                        <button id="brightness" class="active" data-i18n="brightness">Brightness</button>
+                        <button id="saturation" data-i18n="saturation">Saturation</button>
+                        <button id="inversion" data-i18n="inversion">Inversion</button>
+                        <button id="grayscale" data-i18n="grayscale">Grayscale</button>
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brighteness</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+                    </div>
+                </div>
+                <div class="rotate">
+                    <label class="title" data-i18n="rotateFlip">Rotate & Flip</label>
+                    <div class="options">
+                        <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                        <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                        <button id="horizontal"><i class='bx bx-reflect-vertical'></i></button>
+                        <button id="vertical"><i class='bx bx-reflect-horizontal' ></i></button>
+                                </div>
+        </div>
+    </div>
+</div>
+            <div class="preview-img">
+                <span class="placeholder">Chọn ảnh để chỉnh sửa</span>
+                <img src="svg/image-placeholder.svg" alt="preview-img">
+            </div>
+        </div>
+        <div class="controls">
+            <button class="reset-filter" data-i18n="resetFilters">Reset Filters</button>
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choose-img" data-i18n="chooseImage">Choose Image</button>
+                <button class="save-img" data-i18n="saveImage">Save Image</button>
+            </div>
+        </div>
+    </div>

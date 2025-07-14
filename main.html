@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trang Dashboard</title>
+  <link rel="stylesheet" href="main.css" />
+  <!-- Các file CSS riêng -->
+  <link rel="stylesheet" href="css/profile.css" />
+  <link rel="stylesheet" href="css/piano.css" />
+  <link rel="stylesheet" href="css/flip-game.css" />
+  <link rel="stylesheet" href="css/puzzle.css" />
+  <link rel="stylesheet" href="css/edit.css" />
+  <link rel="stylesheet" href="css/draw.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <nav class="site-nav">
+    <button class="sidebar-toggle"><span class="material-symbols-rounded">menu</span></button>
+  </nav>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar collapsed">
+      <div class="sidebar-header">
+        <img src="logo.png" alt="Logo" class="header-logo" />
+        <button class="sidebar-toggle"><span class="material-symbols-rounded">chevron_left</span></button>
+      </div>
+
+      <div class="sidebar-content">
+        <form class="search-form">
+          <span class="material-symbols-rounded">search</span>
+          <input type="search" data-i18n="search" placeholder="Tìm kiếm..." required />
+        </form>
+        <ul class="menu-list">
+          <li><a href="#" class="menu-link active" data-section="profile"><span class="material-symbols-rounded">person</span><span class="menu-label" data-i18n="personalInfo">Thông tin Cá nhân</span></a></li>
+          <li><a href="#" class="menu-link" data-section="flip-game"><span class="material-symbols-rounded">games</span><span class="menu-label" data-i18n="flipGame">Lật Hình</span></a></li>
+          <li><a href="#" class="menu-link" data-section="draw"><span class="material-symbols-rounded">brush</span><span class="menu-label" data-i18n="draw">Vẽ tay</span></a></li>
+          <li><a href="#" class="menu-link" data-section="piano"><span class="material-symbols-rounded">music_note</span><span class="menu-label" data-i18n="piano">Piano</span></a></li>
+          <li><a href="#" class="menu-link" data-section="edit"><span class="material-symbols-rounded">edit</span><span class="menu-label" data-i18n="imageEditor">Chỉnh sửa ảnh</span></a></li>
+          <li><a href="#" class="menu-link" data-section="puzzle"><span class="material-symbols-rounded">psychology</span><span class="menu-label" data-i18n="puzzle">Giải Đố</span></a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-footer">
+        <button class="theme-toggle">
+          <div class="theme-label">
+            <span class="theme-icon material-symbols-rounded">dark_mode</span>
+            <span class="theme-text" data-i18n="darkMode">Dark Mode</span>
+          </div>
+          <div class="theme-toggle-track">
+            <div class="theme-toggle-indicator">
+              <span class="theme-symbol">🌙</span>
+            </div>
+          </div>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Nội dung sẽ được load động -->
+    <div class="main-content" id="main-content"></div>
+  </div>
+
+  <!-- JS chung -->
+  <script type="module" src="main.js"></script>
+  <!-- JS riêng -->
+  <script type="module" src="js/profile.js"></script>
+  <script type="module" src="js/piano.js"></script>
+  <script type="module" src="js/flip-game.js"></script>
+  <script type="module" src="js/puzzle.js"></script>
+  <script type="module" src="js/edit.js"></script>
+  <script type="module" src="js/draw.js"></script>
+</body>
+</html>
